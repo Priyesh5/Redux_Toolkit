@@ -1,5 +1,3 @@
-# Redux_Toolkit
-Get start with Redux toolkit
 Redux -> 
     Redux is an independent JS library
     It is a predictable state container
@@ -23,24 +21,8 @@ Three Core Concepts ->
 Three Principles -> 
     The global state of the application is stored as a single object inside a single store.
     The only way to update the state of the application is by dispatching an action i.e. an object telling what happened. The application will never update the store directly.
-    To specify how the state tree will update by actions, you write pure reducers. 
+    To specify how the state tree will update by actions, you write pure reducers. A reducer is a pure function that will take previous state and action as parameters and return the updated state.
 
 Flow ->
     application ---(dispatches action)----> Action ---(handles action)---> Reducer -----(update)------> Store ------(subscribed by)--------> Application ...........
 
-======================================================================================================================
-*Action*
-    The only way an application can communicate with store is via actions.
-    Action is plain js object consist atleast a type property that defines what happened and can have other properties too.
-    The only way to update state is by emitting action. It carries information from your app to the store.
-    type is a string constant.
-
-======================================================================================================================
-*Reducer*
-    Specify how the app's state changes in response to the actions dispatched by application.
-    A reducer is a pure function that will take previous state and action as arguments and return the updated/next state of application.
-
-======================================================================================================================
-*Store*
-    One store for the entire application.
-    Responsibilities -> holds
